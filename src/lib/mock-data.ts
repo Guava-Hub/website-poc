@@ -41,7 +41,7 @@ export const mockProducts: Product[] = [
     name: "Aurora X Pro",
     slug: "aurora-x-pro",
     description:
-      "Experience the future with Aurora X Pro featuring a stunning 6.7"" AMOLED display, triple-lens camera system, and all-day battery life.",
+      "Experience the future with Aurora X Pro featuring a stunning 6.7\" AMOLED display, triple-lens camera system, and all-day battery life.",
     price: 999,
     salePrice: 899,
     images: [

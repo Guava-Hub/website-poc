@@ -103,7 +103,7 @@ export function CheckoutForm() {
 
   const onSubmit = async (values: CheckoutFormValues) => {
     console.log("Submitting order", values);
-    toast({ title: "Order placed", description: "Your payment is being processed." });
+  toast({ title: "Order placed" });
     clearCart();
   };
 

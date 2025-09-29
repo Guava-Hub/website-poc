@@ -30,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   const handleAddToCart = () => {
     addItem(product);
-    toast({ title: "Added to cart", description: `${product.name} added to cart.` });
+  toast({ title: "Added to cart" });
   };
 
   return (

@@ -36,12 +36,12 @@ export function ProductDetailContent({ product, related, reviews }: ProductDetai
 
   const handleAddToCart = () => {
     addItem(product, selectedVariant ?? undefined, quantity);
-    toast({ title: "Added to cart", description: `${product.name} added to your cart.` });
+  toast({ title: "Added to cart" });
   };
 
   const handleBuyNow = () => {
     addItem(product, selectedVariant ?? undefined, quantity);
-    toast({ title: "Checkout", description: "Redirecting you to checkout..." });
+  toast({ title: "Checkout" });
   };
 
   return (

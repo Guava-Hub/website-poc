@@ -34,7 +34,7 @@ export function ProductQuickView({ product, children }: ProductQuickViewProps) {
 
   const handleAdd = () => {
     addItem(product, selectedVariant, quantity);
-    toast({ title: "Added to cart", description: `${product.name} was added to your cart.` });
+  toast({ title: "Added to cart" });
   };
 
   return (
