@@ -15,7 +15,9 @@ const nextConfig = {
         protocol: "https",
         hostname: "files.stripe.com"
       }
-    ]
+    ],
+    // Disable image optimization in development to avoid network timeouts
+    unoptimized: process.env.NODE_ENV === 'development'
   }
 };
 

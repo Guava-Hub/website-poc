@@ -1,11 +1,11 @@
 import { loadStripe, type Stripe } from "@stripe/stripe-js";
+import { STRIPE_CONFIG } from "@/lib/config";
 
 let stripePromise: Promise<Stripe | null> | null = null;
 
 export const getStripe = () => {
   if (!stripePromise) {
-    const publicKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "pk_test_mocked";
-    stripePromise = loadStripe(publicKey);
+    stripePromise = loadStripe(STRIPE_CONFIG.PUBLISHABLE_KEY);
   }
 
   return stripePromise;

@@ -15,7 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/hooks/use-cart";
 import { formatCurrency } from "@/lib/utils";
-import { getStripe } from "@/lib/stripe";
+import { getStripe } from "@/lib";
 import { useToast } from "@/components/ui/use-toast";
 
 const addressSchema = z.object({

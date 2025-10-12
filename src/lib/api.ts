@@ -3,7 +3,7 @@ import "server-only";
 import { revalidateTag } from "next/cache";
 
 import type { ApiListResponse, ApiSingleResponse, Category, Product, Review } from "@/types";
-import { mockCategories, mockProducts, mockReviews } from "./mock-data";
+import { mockCategories, mockProducts, mockReviews } from "./mock";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "";
 

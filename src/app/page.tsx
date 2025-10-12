@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Sparkles, ShieldCheck, Truck, HeadphonesIcon } from "lucide-react";
 
-import { getCategories, getProducts } from "@/lib/api";
+import { getCategoriesLegacy as getCategories, getProductsLegacy as getProducts } from "@/lib";
 import { CategoryCard } from "@/components/product/category-card";
 import { ProductGrid } from "@/components/product/product-grid";
 import { Button } from "@/components/ui/button";

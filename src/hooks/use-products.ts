@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { FilterState, Product } from "@/types";
-import { fetchCategoryProductsClient, fetchProductsClient } from "@/lib/client-api";
+import { fetchCategoryProductsClient, fetchProductsClient } from "@/lib/client-api-legacy";
 
 const defaultFilters: FilterState = {
   priceRange: { min: 0, max: 3000 },

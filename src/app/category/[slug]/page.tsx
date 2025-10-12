@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import { getCategories, getCategoryProducts } from "@/lib/api";
+import { getCategoriesLegacy as getCategories, getCategoryProductsLegacy as getCategoryProducts } from "@/lib";
 import { CategoryPageContent } from "@/components/product/category-page-content";
 import { Separator } from "@/components/ui/separator";
 

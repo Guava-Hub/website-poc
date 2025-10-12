@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import { getProduct, getProductReviews, getProducts } from "@/lib/api";
+import { getProductLegacy as getProduct, getProductReviewsLegacy as getProductReviews, getProductsLegacy as getProducts } from "@/lib";
 import { ProductGallery } from "@/components/product/product-gallery";
 import { ProductDetailContent } from "@/components/product/product-detail-content";
 

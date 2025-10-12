@@ -5,11 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const formatCurrency = (value: number) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD"
-  }).format(value);
-
-export const sleep = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+// Re-export commonly used utilities for backward compatibility
+export { formatCurrency } from "./utils/format";
+export { sleep } from "./utils/common";
+export { formatDate } from "./utils/date";
