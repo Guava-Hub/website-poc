@@ -78,7 +78,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(response.user);
       
       toast({
-        title: "Account created! Welcome to Visionary Commerce",
+        title: "Account created! Welcome to Guava Hub",
       });
     } catch (error: any) {
       toast({

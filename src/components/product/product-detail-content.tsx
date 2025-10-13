@@ -172,7 +172,7 @@ export function ProductDetailContent({ product, related, reviews }: ProductDetai
           <Separator />
           <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Need help?</h3>
           <p className="text-sm text-muted-foreground">
-            Chat with our product specialists or email <Link href="mailto:support@visionary.io" className="text-primary hover:underline">support@visionary.io</Link> for tailored recommendations.
+            Chat with our product specialists or email <Link href="mailto:support@guavahub.io" className="text-primary hover:underline">support@guavahub.io</Link> for tailored recommendations.
           </p>
           <Button variant="outline" className="w-full">
             Start live chat

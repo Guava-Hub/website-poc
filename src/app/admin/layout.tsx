@@ -54,9 +54,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   return (
     // <ProtectedRoute requiredRole="admin">
-      <div className="flex h-screen bg-gray-50">
+      <div className="flex h-screen bg-gray-50 fixed inset-0">
         {/* Sidebar - Desktop */}
-        <aside className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 bg-white border-r">
+        <aside className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 bg-white border-r z-10">
           <div className="flex items-center justify-center h-16 border-b px-6">
             <h1 className="text-xl font-bold text-primary">Admin Portal</h1>
           </div>

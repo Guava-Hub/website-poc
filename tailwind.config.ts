@@ -67,11 +67,61 @@ const config: Config = {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" }
+        },
+        gradient: {
+          "0%, 100%": {
+            "background-position": "0% 50%"
+          },
+          "50%": {
+            "background-position": "100% 50%"
+          }
+        },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" }
+        },
+        pulse: {
+          "0%, 100%": {
+            opacity: "1"
+          },
+          "50%": {
+            opacity: ".5"
+          }
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
+        },
+        "bounce-slow": {
+          "0%, 100%": {
+            transform: "translateY(-5%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)"
+          },
+          "50%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)"
+          }
+        },
+        glow: {
+          "0%, 100%": {
+            opacity: "1",
+            filter: "brightness(1)"
+          },
+          "50%": {
+            opacity: "0.8",
+            filter: "brightness(1.2)"
+          }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out"
+        "accordion-up": "accordion-up 0.2s ease-out",
+        gradient: "gradient 3s ease infinite",
+        shimmer: "shimmer 2s linear infinite",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "spin-slow": "spin-slow 3s linear infinite",
+        "bounce-slow": "bounce-slow 2s infinite",
+        glow: "glow 2s ease-in-out infinite"
       }
     }
   },

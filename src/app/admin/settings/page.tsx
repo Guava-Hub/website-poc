@@ -30,7 +30,7 @@ export default function AdminSettingsPage() {
               <Label htmlFor="storeName">Store Name</Label>
               <Input
                 id="storeName"
-                defaultValue="Visionary Commerce"
+                defaultValue="Guava Hub"
               />
             </div>
             <div className="space-y-2">
@@ -38,7 +38,7 @@ export default function AdminSettingsPage() {
               <Input
                 id="storeEmail"
                 type="email"
-                defaultValue="contact@visionarycommerce.com"
+                defaultValue="contact@guavahub.io"
               />
             </div>
             <div className="space-y-2">

@@ -215,7 +215,7 @@ export function CheckoutForm() {
           <div className="space-y-4 rounded-3xl border bg-background p-6 shadow-sm">
             <CardElement options={{ hidePostalCode: true, style: { base: { fontSize: "16px" } } }} />
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>By placing your order, you agree to Visionary&apos;s terms and privacy policy.</p>
+              <p>By placing your order, you agree to Guava Hub&apos;s terms and privacy policy.</p>
               <Textarea placeholder="Add delivery notes (optional)" {...form.register("notes")} />
             </div>
           </div>

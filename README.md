@@ -1,6 +1,6 @@
-# Visionary Commerce
+# Guava Hub
 
-Visionary Commerce is a modern e-commerce proof of concept built with Next.js 14, the App Router, and Tailwind CSS. The UI leverages shadcn/ui primitives to deliver a premium shopping experience with responsive layouts, animated components, and rich interactivity.
+Guava Hub is a modern e-commerce proof of concept built with Next.js 14, the App Router, and Tailwind CSS. The UI leverages shadcn/ui primitives to deliver a premium shopping experience with responsive layouts, animated components, and rich interactivity.
 
 ## Features
 
@@ -40,4 +40,4 @@ src/
 ├── types/             # Shared TypeScript interfaces
 ```
 
-Enjoy exploring the Visionary Commerce storefront!
+Enjoy exploring the Guava Hub storefront!

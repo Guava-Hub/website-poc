@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { FilterState, Product } from "@/types";
-import { fetchCategoryProductsClient, fetchProductsClient } from "@/lib/client-api-legacy";
+import { productService } from "@/lib/api/services";
 
 const defaultFilters: FilterState = {
   priceRange: { min: 0, max: 3000 },
@@ -31,14 +31,16 @@ export function useProducts(options: UseProductsOptions = {}) {
       setError(null);
 
       try {
-        let response;
+        let list: Product[];
+        
         if (options.categorySlug) {
-          response = await fetchCategoryProductsClient(options.categorySlug);
+          const response = await productService.getProductsByCategory(options.categorySlug);
+          list = response.products;
         } else {
-          response = await fetchProductsClient();
+          const response = await productService.getProducts();
+          list = response.products;
         }
 
-        let list = response.data;
         if (options.searchTerm) {
           const query = options.searchTerm.toLowerCase();
           list = list.filter(

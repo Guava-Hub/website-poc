@@ -59,8 +59,8 @@ export function Header() {
             </SheetContent>
           </Sheet>
           <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">v0</span>
-            <span>Visionary</span>
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg">🥑</span>
+            <span>Guava Hub</span>
           </Link>
         </div>
 

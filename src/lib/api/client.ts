@@ -48,6 +48,7 @@ export class ApiClient {
         this.defaultOptions = {
             headers: {
                 "Content-Type": "application/json",
+                "api-version": API_CONFIG.API_VERSION,
             },
         };
     }

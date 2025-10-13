@@ -26,11 +26,11 @@ export default async function HomePage() {
               <Sparkles className="h-4 w-4" /> Introducing the Aurora Collection
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Elevate your everyday with visionary technology
+              Elevate your everyday with innovative technology
             </h1>
             <p className="max-w-xl text-lg text-muted-foreground">
               Discover premium devices curated for future-forward creators. From intelligent smartphones to immersive audio,
-              Visionary helps you stay connected to what matters most.
+              Guava Hub helps you stay connected to what matters most.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
@@ -116,7 +116,7 @@ export default async function HomePage() {
 
       <section className="container grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold tracking-tight">Why creators choose Visionary</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Why creators choose Guava Hub</h2>
           <p className="text-lg text-muted-foreground">
             We combine premium hardware with seamless experiences to help you do more with every moment.
           </p>
@@ -146,7 +146,7 @@ export default async function HomePage() {
             </span>
             <h3 className="text-3xl font-semibold">Unlock insider access</h3>
             <p className="text-sm text-primary-foreground/90">
-              Join Visionary Collective for personalized product drops, studio experiences, and extended warranties on every device.
+              Join Guava Hub Collective for personalized product drops, studio experiences, and extended warranties on every device.
             </p>
             <Button asChild size="lg" variant="secondary" className="text-primary">
               <Link href="/signup">Become a member</Link>

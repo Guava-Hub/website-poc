@@ -7,13 +7,13 @@ export function Footer() {
       <div className="container grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-2 text-xl font-semibold">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
-              v0
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground text-lg">
+              🥑
             </span>
-            Visionary
+            Guava Hub
           </Link>
           <p className="text-sm text-muted-foreground">
-            Visionary is your destination for future-ready technology. Explore curated selections of
+            Guava Hub is your destination for future-ready technology. Explore curated selections of
             smartphones, laptops, audio gear, and wearables crafted for modern lifestyles.
           </p>
           <div className="flex items-center gap-3 text-muted-foreground">
@@ -68,8 +68,8 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              <a href="mailto:support@visionary.io" className="hover:text-foreground">
-                support@visionary.io
+              <a href="mailto:support@guavahub.io" className="hover:text-foreground">
+                support@guavahub.io
               </a>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Footer() {
         <div className="space-y-4">
           <h4 className="text-sm font-semibold uppercase tracking-wide">Stay in the loop</h4>
           <p className="text-sm text-muted-foreground">
-            Subscribe to receive curated deals, product drops, and exclusive experiences from Visionary.
+            Subscribe to receive curated deals, product drops, and exclusive experiences from Guava Hub.
           </p>
           <form className="flex flex-col gap-2 sm:flex-row" aria-label="Newsletter signup">
             <label className="sr-only" htmlFor="newsletter-email">
@@ -105,7 +105,7 @@ export function Footer() {
       </div>
       <div className="border-t bg-background/60 py-4">
         <div className="container flex flex-col justify-between gap-2 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Visionary Commerce. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Guava Hub. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms & Conditions</Link>
