@@ -82,7 +82,7 @@ export function ProductDetailContent({ product, related, reviews }: ProductDetai
             <div className="space-y-4">
               {product.variants.map((variant) => (
                 <div key={variant.id} className="space-y-2">
-                  <h3 className="text-sm font-semibold text-foreground">{variant.name}</h3>
+                  <p className="text-sm font-semibold text-foreground">{variant.name}</p>
                   <div className="flex flex-wrap gap-2">
                     {variant.options.map((option) => {
                       const value = `${variant.id}:${option}`;

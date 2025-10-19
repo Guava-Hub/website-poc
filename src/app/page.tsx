@@ -63,16 +63,12 @@ export default async function HomePage() {
           <div className="relative hidden lg:block">
             <div className="absolute -right-16 top-10 h-96 w-96 rounded-full bg-accent/40 blur-3xl" />
             <div className="relative h-full w-full overflow-hidden rounded-3xl border shadow-xl">
-              <video
-                className="h-full w-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1400&q=80"
-              >
-                <source src="https://cdn.v0.dev/assets/hero-video.mp4" type="video/mp4" />
-              </video>
+              <div 
+                className="h-full w-full bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1400&q=80')"
+                }}
+              />
             </div>
           </div>
         </div>
@@ -164,7 +160,7 @@ function Feature({ icon, title, description }: { icon: React.ReactNode; title: s
     <div className="flex items-start gap-3 rounded-2xl bg-background/50 p-4">
       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">{icon}</div>
       <div>
-        <h3 className="text-sm font-semibold">{title}</h3>
+        <p className="text-sm font-semibold">{title}</p>
         <p className="text-xs text-muted-foreground">{description}</p>
       </div>
     </div>
@@ -174,7 +170,7 @@ function Feature({ icon, title, description }: { icon: React.ReactNode; title: s
 function Highlight({ title, description }: { title: string; description: string }) {
   return (
     <div className="rounded-2xl border bg-muted/40 p-5">
-      <h3 className="text-base font-semibold text-foreground">{title}</h3>
+      <p className="text-base font-semibold text-foreground">{title}</p>
       <p className="mt-2 text-sm text-muted-foreground">{description}</p>
     </div>
   );

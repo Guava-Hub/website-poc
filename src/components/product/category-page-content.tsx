@@ -95,7 +95,7 @@ export function CategoryPageContent({ products, category }: CategoryPageContentP
     <div className="space-y-8">
       <div className="space-y-3">
         <div className="flex items-center justify-between">
-          <h3 className="text-sm font-semibold uppercase tracking-wide">Price</h3>
+          <p className="text-sm font-semibold uppercase tracking-wide">Price</p>
           <span className="text-xs text-muted-foreground">
             {formatCurrency(priceRange[0])} - {formatCurrency(priceRange[1])}
           </span>
@@ -112,7 +112,7 @@ export function CategoryPageContent({ products, category }: CategoryPageContentP
       <Separator />
 
       <div className="space-y-3">
-        <h3 className="text-sm font-semibold uppercase tracking-wide">Brand</h3>
+        <p className="text-sm font-semibold uppercase tracking-wide">Brand</p>
         <div className="space-y-2">
           {brandOptions.map((brand) => {
             const checked = selectedBrands.includes(brand);
@@ -136,7 +136,7 @@ export function CategoryPageContent({ products, category }: CategoryPageContentP
       <Separator />
 
       <div className="space-y-3">
-        <h3 className="text-sm font-semibold uppercase tracking-wide">Rating</h3>
+        <p className="text-sm font-semibold uppercase tracking-wide">Rating</p>
         <div className="space-y-2">
           {ratingFilters.map((rating) => {
             const checked = selectedRatings.includes(rating);
